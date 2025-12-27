@@ -36,7 +36,21 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Utility to prevent wrapping except on very small screens (<576px) */
+  .prevent-wrap {
+    white-space: nowrap;
+  }
+
 }
+
+/* Allow wrap for .prevent-wrap under 576px */
+@media (max-width: 576px) {
+  .prevent-wrap {
+    white-space: normal !important;
+  }
+}
+
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {

@@ -57,7 +57,7 @@ const HeroSection = () => {
               <div className="p-3 md:p-4 bg-primary-100 dark:bg-primary-900/30 rounded-xl mb-3 group-hover:bg-primary-500 group-hover:scale-110 transition-all duration-300">
                 <FiCode
                   size={28}
-                  className="text-primary-600 dark:text-primary-400"
+                  className="text-primary-600 dark:text-primary-400 group-hover:text-white dark:group-hover:text-white transition-colors duration-300"
                 />
               </div>
               <h3 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm sm:text-base">
@@ -72,7 +72,7 @@ const HeroSection = () => {
               <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-xl mb-3 group-hover:bg-primary-500 group-hover:scale-110 transition-all duration-300">
                 <FiLayers
                   size={28}
-                  className="text-primary-600 dark:text-primary-400"
+                  className="text-primary-600 dark:text-primary-400 group-hover:text-white dark:group-hover:text-white transition-colors duration-300"
                 />
               </div>
               <h3 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm sm:text-base">
@@ -87,7 +87,7 @@ const HeroSection = () => {
               <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-xl mb-3 group-hover:bg-primary-500 group-hover:scale-110 transition-all duration-300">
                 <FiZap
                   size={28}
-                  className="text-primary-600 dark:text-primary-400"
+                  className="text-primary-600 dark:text-primary-400 group-hover:text-white dark:group-hover:text-white transition-colors duration-300"
                 />
               </div>
               <h3 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm sm:text-base">
@@ -129,7 +129,7 @@ const HeroSection = () => {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="flex justify-center mt-8 sm:mt-12 animate-bounce">
+          <div className="flex justify-center mt-12 sm:mt-20 animate-bounce">
             <Link
               to="about"
               spy={true}

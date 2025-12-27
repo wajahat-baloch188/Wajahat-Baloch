@@ -47,11 +47,11 @@ const AboutSection = () => {
                   Developer.
                 </p>
                 <p>
-                  I am currently enrolled as a seventh-semester student at{" "}
+                  I graduated in 2024 from{" "}
                   <span className="font-semibold">
                     Sindh Madressatul Islam University
                   </span>
-                  , pursuing a Bachelor of Science degree in Computer Science.
+                  with a Bachelor of Science degree in Computer Science.
                 </p>
                 <p>
                   I have a wide range of hobbies and passions that keep me busy.

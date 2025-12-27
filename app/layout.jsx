@@ -10,6 +10,12 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className="bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 transition-colors duration-300">
+        {/* Remove common extension-injected attributes (e.g., Grammarly) before React hydrates */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var attrs=['data-new-gr-c-s-check-loaded','data-gr-ext-installed'];attrs.forEach(function(a){try{document.documentElement.removeAttribute(a);}catch(e){}try{document.body&&document.body.removeAttribute(a);}catch(e){}});})();`,
+          }}
+        />
         <ThemeProvider
           enableSystem={true}
           attribute="class"

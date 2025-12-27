@@ -49,7 +49,7 @@ const AboutSection = () => {
                 <p>
                   I graduated in 2024 from{" "}
                   <span className="font-semibold">
-                    Sindh Madressatul Islam University
+                    Sindh Madressatul Islam University{" "}
                   </span>
                   with a Bachelor of Science degree in Computer Science.
                 </p>

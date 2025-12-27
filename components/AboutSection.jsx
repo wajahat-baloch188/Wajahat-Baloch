@@ -15,7 +15,10 @@ const skills = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-12 sm:py-16 md:py-20 lg:py-32 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm">
+    <section
+      id="about"
+      className="py-12 sm:py-16 md:py-20 lg:py-32 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16 animate-fadeInUp">
@@ -34,20 +37,27 @@ const AboutSection = () => {
               </h3>
               <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
-                  Hi, my name is <span className="font-bold text-primary-600 dark:text-primary-400">Wajahat</span> and I am a{" "}
-                  <span className="font-bold">highly ambitious</span>,{" "}
-                  <span className="font-bold">self-motivated</span>, and{" "}
-                  <span className="font-bold">driven</span> Frontend Web Developer.
+                  Hi, my name is{" "}
+                  <span className="font-bold text-primary-600 dark:text-primary-400">
+                    Wajahat
+                  </span>{" "}
+                  and I am a <span className="font-bold">highly ambitious</span>
+                  , <span className="font-bold">self-motivated</span>, and{" "}
+                  <span className="font-bold">driven</span> Frontend Web
+                  Developer.
                 </p>
                 <p>
                   I am currently enrolled as a seventh-semester student at{" "}
-                  <span className="font-semibold">Sindh Madressatul Islam University</span>, pursuing a Bachelor of Science
-                  degree in Computer Science.
+                  <span className="font-semibold">
+                    Sindh Madressatul Islam University
+                  </span>
+                  , pursuing a Bachelor of Science degree in Computer Science.
                 </p>
                 <p>
                   I have a wide range of hobbies and passions that keep me busy.
-                  From reading, playing sports, to traveling, I am always seeking new
-                  experiences and love to keep myself engaged and learning new things.
+                  From reading, playing sports, to traveling, I am always
+                  seeking new experiences and love to keep myself engaged and
+                  learning new things.
                 </p>
                 <p>
                   I believe that you should{" "}

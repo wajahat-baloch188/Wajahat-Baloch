@@ -3,8 +3,14 @@ export default function Head() {
     <>
       <title>Wajahat Baloch | Frontend Web Developer</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <meta name="description" content="Portfolio of Wajahat Baloch - Frontend Web Developer specializing in React, Next.js, and modern web technologies. Explore my projects and get in touch!" />
-      <meta name="keywords" content="Frontend Developer, React Developer, Next.js, Web Development, Portfolio" />
+      <meta
+        name="description"
+        content="Portfolio of Wajahat Baloch - Frontend Web Developer specializing in React, Next.js, and modern web technologies. Explore my projects and get in touch!"
+      />
+      <meta
+        name="keywords"
+        content="Frontend Developer, React Developer, Next.js, Web Development, Portfolio"
+      />
       <meta name="author" content="Wajahat Baloch" />
       <link
         rel="icon"

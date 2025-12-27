@@ -1,13 +1,8 @@
 "use client" // this is a client component
 
-import React, { useEffect, useRef, ReactNode } from "react"
-interface Props {
-  offset?: string
-  children?: ReactNode
-  // any props that come into the component
-}
+import React, { useEffect, useRef } from "react"
 
-export default function SlideUp({ children, offset = "0px" }: Props) {
+export default function SlideUp({ children, offset = "0px" }) {
   const ref = useRef(null)
 
   useEffect(() => {
@@ -23,10 +18,17 @@ export default function SlideUp({ children, offset = "0px" }: Props) {
       { rootMargin: offset }
     )
 
-    if (ref.current) {
-      observer.observe(ref.current)
+    const currentRef = ref.current
+    if (currentRef) {
+      observer.observe(currentRef)
     }
-  }, [ref])
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef)
+      }
+    }
+  }, [offset])
 
   return (
     <div ref={ref} className="relative opacity-0">
@@ -34,3 +36,4 @@ export default function SlideUp({ children, offset = "0px" }: Props) {
     </div>
   )
 }
+

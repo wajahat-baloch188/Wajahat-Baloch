@@ -26,7 +26,6 @@ const HeroSection = () => {
               👋 Hello, I'm
             </p>
           </div>
-
           {/* Main Heading */}
           <div className="animate-fadeInUp space-y-1">
             <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-bold leading-tight">

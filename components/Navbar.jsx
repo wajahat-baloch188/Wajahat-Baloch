@@ -77,7 +77,7 @@ export default function Navbar() {
               <Link
                 key={idx}
                 to={item.page}
-                className="relative px-3 lg:px-4 py-2 text-xs lg:text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 group"
+                className="relative px-3 cursor-pointer lg:px-4 py-2 text-xs lg:text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 group"
                 activeClass="active"
                 spy={true}
                 smooth={true}
@@ -92,12 +92,17 @@ export default function Navbar() {
             {/* Theme Toggle */}
             {mounted && (
               <button
-                onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+                onClick={() =>
+                  setTheme(currentTheme === "dark" ? "light" : "dark")
+                }
                 className="ml-3 lg:ml-4 p-2 lg:p-2.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110"
                 aria-label="Toggle theme"
               >
                 {currentTheme === "dark" ? (
-                  <RiSunLine size={18} className="lg:w-5 lg:h-5 text-yellow-500" />
+                  <RiSunLine
+                    size={18}
+                    className="lg:w-5 lg:h-5 text-yellow-500"
+                  />
                 ) : (
                   <RiMoonFill size={18} className="lg:w-5 lg:h-5" />
                 )}
@@ -109,7 +114,9 @@ export default function Navbar() {
           <div className="md:hidden flex items-center space-x-2">
             {mounted && (
               <button
-                onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+                onClick={() =>
+                  setTheme(currentTheme === "dark" ? "light" : "dark")
+                }
                 className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
                 aria-label="Toggle theme"
               >

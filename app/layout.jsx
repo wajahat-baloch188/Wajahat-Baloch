@@ -1,10 +1,9 @@
 "use client";
-import "../styles/globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import CursorFollower from "@/components/CursorFollower";
-import PageLoader from "@/components/PageLoader";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "next-themes";
+import "../styles/globals.css";
 
 export default function RootLayout({ children }) {
   return (
@@ -17,7 +16,6 @@ export default function RootLayout({ children }) {
           defaultTheme="system"
         >
           <CursorFollower />
-          <PageLoader />
           <div className="min-h-screen flex flex-col">
             <Navbar />
             <main className="flex-grow">{children}</main>

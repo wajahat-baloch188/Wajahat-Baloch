@@ -1,6 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import { AiOutlineMail, AiOutlinePhone, AiOutlineLinkedin, AiOutlineGithub, AiOutlineFacebook } from "react-icons/ai";
+import {
+  AiOutlineMail,
+  AiOutlinePhone,
+  AiOutlineLinkedin,
+  AiOutlineGithub,
+  AiOutlineFacebook,
+} from "react-icons/ai";
 import { FiSend } from "react-icons/fi";
 
 const ContactSection = () => {
@@ -13,7 +19,9 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission
-    const mailtoLink = `mailto:wajahatbaloch2020@gmail.com?subject=Contact from ${formData.name}&body=${encodeURIComponent(formData.message)}`;
+    const mailtoLink = `mailto:wajahatbaloch2002@gmail.com?subject=Contact from ${
+      formData.name
+    }&body=${encodeURIComponent(formData.message)}`;
     window.location.href = mailtoLink;
     setFormData({ name: "", email: "", message: "" });
   };
@@ -26,7 +34,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-12 sm:py-16 md:py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <section
+      id="contact"
+      className="py-12 sm:py-16 md:py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16 animate-fadeInUp">
@@ -35,7 +46,8 @@ const ContactSection = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-primary-400 mx-auto rounded-full mb-4 sm:mb-6"></div>
           <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto px-4 sm:px-0">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your visions.
           </p>
         </div>
 
@@ -54,32 +66,48 @@ const ContactSection = () => {
             {/* Contact Cards */}
             <div className="space-y-3 sm:space-y-4">
               <a
-                href="mailto:wajahatbaloch2020@gmail.com"
+                href="mailto:wajahatbaloch2002@gmail.com"
                 className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary-500 dark:hover:border-primary-500 hover:shadow-lg transition-all duration-300 group"
               >
                 <div className="p-2 sm:p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg group-hover:bg-primary-500 group-hover:scale-110 transition-all duration-300 flex-shrink-0">
-                  <AiOutlineMail size={20} className="sm:w-6 sm:h-6 text-primary-600 dark:text-primary-400" />
+                  <AiOutlineMail
+                    size={20}
+                    className="sm:w-6 sm:h-6 text-primary-600 dark:text-primary-400"
+                  />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <p className="font-semibold text-sm sm:text-base text-gray-900 dark:text-white">Email</p>
-                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 truncate">wajahatbaloch2020@gmail.com</p>
+                  <p className="font-semibold text-sm sm:text-base text-gray-900 dark:text-white">
+                    Email
+                  </p>
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 truncate">
+                    wajahatbaloch2002@gmail.com
+                  </p>
                 </div>
               </a>
 
               <div className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
                 <div className="p-2 sm:p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex-shrink-0">
-                  <AiOutlinePhone size={20} className="sm:w-6 sm:h-6 text-primary-600 dark:text-primary-400" />
+                  <AiOutlinePhone
+                    size={20}
+                    className="sm:w-6 sm:h-6 text-primary-600 dark:text-primary-400"
+                  />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <p className="font-semibold text-sm sm:text-base text-gray-900 dark:text-white">Phone</p>
-                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Available upon request</p>
+                  <p className="font-semibold text-sm sm:text-base text-gray-900 dark:text-white">
+                    Phone
+                  </p>
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+                    Available upon request
+                  </p>
                 </div>
               </div>
             </div>
 
             {/* Social Links */}
             <div>
-              <h4 className="font-semibold text-sm sm:text-base text-gray-900 dark:text-white mb-3 sm:mb-4">Connect with me</h4>
+              <h4 className="font-semibold text-sm sm:text-base text-gray-900 dark:text-white mb-3 sm:mb-4">
+                Connect with me
+              </h4>
               <div className="flex gap-3 sm:gap-4">
                 <a
                   href="https://github.com/wajahat-baloch188"
@@ -88,7 +116,10 @@ const ContactSection = () => {
                   className="p-2.5 sm:p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-primary-500 dark:hover:border-primary-500 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-300 group"
                   aria-label="GitHub"
                 >
-                  <AiOutlineGithub size={20} className="sm:w-6 sm:h-6 text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors" />
+                  <AiOutlineGithub
+                    size={20}
+                    className="sm:w-6 sm:h-6 text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors"
+                  />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/wajahatbaloch/"
@@ -97,7 +128,10 @@ const ContactSection = () => {
                   className="p-2.5 sm:p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-primary-500 dark:hover:border-primary-500 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-300 group"
                   aria-label="LinkedIn"
                 >
-                  <AiOutlineLinkedin size={20} className="sm:w-6 sm:h-6 text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors" />
+                  <AiOutlineLinkedin
+                    size={20}
+                    className="sm:w-6 sm:h-6 text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors"
+                  />
                 </a>
                 <a
                   href="https://www.facebook.com/wajahat.baloch.35"
@@ -106,7 +140,10 @@ const ContactSection = () => {
                   className="p-2.5 sm:p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-primary-500 dark:hover:border-primary-500 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-300 group"
                   aria-label="Facebook"
                 >
-                  <AiOutlineFacebook size={20} className="sm:w-6 sm:h-6 text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors" />
+                  <AiOutlineFacebook
+                    size={20}
+                    className="sm:w-6 sm:h-6 text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors"
+                  />
                 </a>
               </div>
             </div>
@@ -114,9 +151,15 @@ const ContactSection = () => {
 
           {/* Contact Form */}
           <div className="animate-fadeInUp animation-delay-400">
-            <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-800 p-5 sm:p-6 lg:p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 space-y-4 sm:space-y-6">
+            <form
+              onSubmit={handleSubmit}
+              className="bg-white dark:bg-gray-800 p-5 sm:p-6 lg:p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 space-y-4 sm:space-y-6"
+            >
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Name
                 </label>
                 <input
@@ -132,7 +175,10 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Email
                 </label>
                 <input
@@ -148,7 +194,10 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Message
                 </label>
                 <textarea

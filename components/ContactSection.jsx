@@ -16,15 +16,8 @@ const ContactSection = () => {
     message: "",
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission
-    const mailtoLink = `mailto:wajahatbaloch2002@gmail.com?subject=Contact from ${
-      formData.name
-    }&body=${encodeURIComponent(formData.message)}`;
-    window.location.href = mailtoLink;
-    setFormData({ name: "", email: "", message: "" });
-  };
+  // Form submission is handled by Formsubmit.co via the form's action attribute
+  // No client-side mailto handler is required — the form will POST to Formsubmit.co
 
   const handleChange = (e) => {
     setFormData({
@@ -152,9 +145,21 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="animate-fadeInUp animation-delay-400">
             <form
-              onSubmit={handleSubmit}
+              action="https://formsubmit.co/wajahatbaloch2002@gmail.com"
+              method="POST"
               className="bg-white dark:bg-gray-800 p-5 sm:p-6 lg:p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 space-y-4 sm:space-y-6"
             >
+              {/* Hidden fields for Formsubmit */}
+              <input
+                type="hidden"
+                name="_subject"
+                value="New message from portfolio"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="/" />
+              {/* Honeypot to deter bots */}
+              <input type="text" name="_honey" style={{ display: "none" }} />
+
               <div>
                 <label
                   htmlFor="name"

@@ -35,7 +35,7 @@ const HeroSection = () => {
             </h1>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
-              <span className="text-gray-700 dark:text-gray-300">I'm a </span>
+              <span className="text-gray-700 dark:text-gray-300"> a </span>
               <span className="bg-gradient-to-r from-primary-600 via-primary-500 to-primary-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
                 Frontend Web Developer
               </span>
